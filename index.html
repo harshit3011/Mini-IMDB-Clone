@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini IMDB Clone</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Mini IMDB Clone</h1>
+    <input type="text" id="searchInput" placeholder="Search movies...">
+    <div id="searchResults"></div>
+    <h2>My Favorite Movies</h2>
+    <div id="favoriteMovies"></div>
+  </div>
+
+  <div id="movieDetailsModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="movieDetails"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Load favorite movies when the page loads
+    displayFavoriteMovies();
+  </script>
+</body>
+</html>
